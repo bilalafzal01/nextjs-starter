@@ -4,9 +4,9 @@ import { useRouter } from "next/router";
 const Page = () => {
   const router = useRouter();
 
-  const { params } = router.query;
+  let { id } = router.query;
 
-  return <h1>{params}</h1>;
+  return <h1>Note - {id}</h1>;
 };
 
 export default Page;

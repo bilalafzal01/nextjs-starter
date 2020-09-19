@@ -1,3 +1,13 @@
 import React from "react";
-const Page = () => <div>Index Page</div>;
+import Link from "next/link";
+import "../src/styles.module.css";
+
+const Page = () => (
+  <div>
+    <h1>Index page</h1>
+    <Link href="/notes">
+      <a>Notes</a>
+    </Link>
+  </div>
+);
 export default Page;
